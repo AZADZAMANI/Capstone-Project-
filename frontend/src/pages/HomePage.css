@@ -4,18 +4,7 @@
     flex-direction: column;
     min-height: 100vh; 
   }
-  
 
-  
-  .sign-in-btn {
-    background-color: #28A745; 
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
 
   .slogan {
     margin: 40px 0;
@@ -30,6 +19,7 @@
     gap: 20px;
     padding: 20px;
     margin-top: auto;
+    margin-bottom: 40px;
   }
   
 

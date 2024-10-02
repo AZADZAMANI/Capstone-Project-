@@ -8,16 +8,7 @@ function HomePage() {
 
   return (
     <div className="homepage">
-          <header className="header">
-        <div className="title">Destination Health</div>
-        <nav className="nav">
-          <a href="#home">Home</a>
-          <a href="#how-to-book">How to book</a>
-          <a href="#about-us">About us</a>
-          <a href="#staff-portal">Staff Portal</a>
-          <button className="sign-in-btn" onClick={() => navigate('/signin')}>Sign in</button>
-        </nav>
-      </header>
+
 
       {/* Slogan */}
       <section className="slogan">

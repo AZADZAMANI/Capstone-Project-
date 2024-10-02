@@ -47,15 +47,7 @@ function RegisterPage() {
 
   return (
     <div className="register-page">
-      <header className="header">
-        <div className="title">Destination Health</div>
-        <nav className="nav">
-          <a href="/">Home</a>
-          <a href="#how-to-book">How to book</a>
-          <a href="#about-us">About us</a>
-          <a href="#staff-portal">Staff Portal</a>
-        </nav>
-      </header>
+
 
       <div className="form-container">
         <h1>New Patient Registration Form</h1>
