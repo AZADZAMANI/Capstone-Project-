@@ -1,17 +1,24 @@
 {
   "files": {
-    "main.css": "/Capstone-Project-/static/css/main.02c4959d.chunk.css",
-    "main.js": "/Capstone-Project-/static/js/main.2992ddd0.chunk.js",
-    "main.js.map": "/Capstone-Project-/static/js/main.2992ddd0.chunk.js.map",
-    "runtime~main.js": "/Capstone-Project-/static/js/runtime~main.42bf7c97.js",
-    "runtime~main.js.map": "/Capstone-Project-/static/js/runtime~main.42bf7c97.js.map",
-    "static/js/2.a36e3ff3.chunk.js": "/Capstone-Project-/static/js/2.a36e3ff3.chunk.js",
-    "static/js/2.a36e3ff3.chunk.js.map": "/Capstone-Project-/static/js/2.a36e3ff3.chunk.js.map",
-    "static/js/3.31c88699.chunk.js": "/Capstone-Project-/static/js/3.31c88699.chunk.js",
-    "static/js/3.31c88699.chunk.js.map": "/Capstone-Project-/static/js/3.31c88699.chunk.js.map",
+    "main.css": "/Capstone-Project-/static/css/main.9d392460.chunk.css",
+    "main.js": "/Capstone-Project-/static/js/main.d3a52c9f.chunk.js",
+    "main.js.map": "/Capstone-Project-/static/js/main.d3a52c9f.chunk.js.map",
+    "runtime-main.js": "/Capstone-Project-/static/js/runtime-main.a1d59dd7.js",
+    "runtime-main.js.map": "/Capstone-Project-/static/js/runtime-main.a1d59dd7.js.map",
+    "static/js/2.c04d1216.chunk.js": "/Capstone-Project-/static/js/2.c04d1216.chunk.js",
+    "static/js/2.c04d1216.chunk.js.map": "/Capstone-Project-/static/js/2.c04d1216.chunk.js.map",
+    "static/js/3.d8d546e1.chunk.js": "/Capstone-Project-/static/js/3.d8d546e1.chunk.js",
+    "static/js/3.d8d546e1.chunk.js.map": "/Capstone-Project-/static/js/3.d8d546e1.chunk.js.map",
     "index.html": "/Capstone-Project-/index.html",
-    "precache-manifest.a844ae3274b6c6d5497e7c237331406b.js": "/Capstone-Project-/precache-manifest.a844ae3274b6c6d5497e7c237331406b.js",
+    "precache-manifest.5aa95336329d7ee491543492248829a1.js": "/Capstone-Project-/precache-manifest.5aa95336329d7ee491543492248829a1.js",
     "service-worker.js": "/Capstone-Project-/service-worker.js",
-    "static/css/main.02c4959d.chunk.css.map": "/Capstone-Project-/static/css/main.02c4959d.chunk.css.map"
-  }
+    "static/css/main.9d392460.chunk.css.map": "/Capstone-Project-/static/css/main.9d392460.chunk.css.map",
+    "static/js/2.c04d1216.chunk.js.LICENSE.txt": "/Capstone-Project-/static/js/2.c04d1216.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a1d59dd7.js",
+    "static/js/2.c04d1216.chunk.js",
+    "static/css/main.9d392460.chunk.css",
+    "static/js/main.d3a52c9f.chunk.js"
+  ]
 }
