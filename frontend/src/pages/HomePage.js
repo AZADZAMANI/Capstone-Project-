@@ -23,10 +23,6 @@ function HomePage() {
           <h2>Family Doctor</h2>
           <button>Book Now</button>
         </div>
-        <div className="card">
-          <h2>Walk in</h2>
-          <button>Book Now</button>
-        </div>
       </section>
     </div>
   );
