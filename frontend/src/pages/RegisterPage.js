@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './RegisterPage.css'; 
+import './RegisterPage.css';
 import '../common.css';
 
 function RegisterPage() {
@@ -11,7 +11,14 @@ function RegisterPage() {
     email: '',
     password: '',
     termsAccepted: false,
+    selectedDoctor: '',
   });
+
+  const [doctorList, setDoctorList] = useState([
+    { id: 1, name: 'Dr. John Smith', maxPatients: 10, currentPatients: 5 },
+    { id: 2, name: 'Dr. Sarah Johnson', maxPatients: 8, currentPatients: 8 },
+    { id: 3, name: 'Dr. Emily Brown', maxPatients: 12, currentPatients: 3 },
+  ]);
 
   const navigate = useNavigate();
 
@@ -30,6 +37,13 @@ function RegisterPage() {
     });
   };
 
+  const handleDoctorSelection = (e) => {
+    setFormData({
+      ...formData,
+      selectedDoctor: e.target.value,
+    });
+  };
+
   const isFormValid =
     formData.fullName &&
     formData.address &&
@@ -41,14 +55,12 @@ function RegisterPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormValid) {
-      navigate('/myprofile');
+      navigate('/myprofile'); // Navigating directly to the profile page
     }
   };
 
   return (
     <div className="register-page">
-
-
       <div className="form-container">
         <h1>New Patient Registration Form</h1>
         <h2>Welcome to Destination Health</h2>
@@ -97,6 +109,23 @@ function RegisterPage() {
               value={formData.password}
               onChange={handleInputChange}
             />
+          </label>
+          <label>
+            Select Doctor:
+            <div className="custom-select">
+              <select 
+                name="selectedDoctor" 
+                value={formData.selectedDoctor} 
+                onChange={handleDoctorSelection}
+              >
+                <option value="">-- Please Select a Doctor --</option>
+                {doctorList.map((doctor) => (
+                  <option key={doctor.id} value={doctor.id}>
+                    {doctor.name} (Current Patients: {doctor.currentPatients}/{doctor.maxPatients})
+                  </option>
+                ))}
+              </select>
+            </div>
           </label>
           <label className="terms-checkbox">
             <input
