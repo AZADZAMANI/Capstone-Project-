@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './RegisterPage.css'; 
+import './RegisterPage.css';
 import '../common.css';
 
 function RegisterPage() {
@@ -52,23 +52,10 @@ function RegisterPage() {
     formData.password &&
     formData.termsAccepted;
 
-  const isDoctorAvailable = (doctorId) => {
-    const doctor = doctorList.find((doc) => doc.id === parseInt(doctorId));
-    return doctor && doctor.currentPatients < doctor.maxPatients;
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormValid) {
-      if (formData.selectedDoctor && isDoctorAvailable(formData.selectedDoctor)) {
-        navigate('/myprofile');
-      } else {
-        alert('Selected doctor is not available. Please choose another doctor or proceed without one.');
-        setFormData({
-          ...formData,
-          selectedDoctor: '',
-        });
-      }
+      navigate('/myprofile'); // Navigating directly to the profile page
     }
   };
 
