@@ -6,6 +6,7 @@ import PatientProfile from './pages/PatientProfile';
 import SignInPage from './pages/SignInPage'; 
 import './common.css';
 import Header from './components/Header';
+import BookAppointmentPage from './pages/BookAppointmentPage'; 
 
 function App() {
   const [patientData, setPatientData] = useState({
@@ -28,7 +29,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/register" element={<RegisterPage />} />
-            <Route path="/signin" element={<SignInPage />} /> {/* Add SignInPage route */}
+            <Route path="/signin" element={<SignInPage />} /> 
+            <Route path="/book-appointment" element={<BookAppointmentPage />} />
             <Route path="/myprofile" element={
               patientData ? (
                 <PatientProfile

@@ -1,15 +1,11 @@
-
-  
   .App {
     text-align: center;
     min-height: 100vh; 
     display: flex; 
     flex-direction: column; 
-
+    overflow-y: auto;
   }
-  
 
-  
 
   .profile-btn {
     background: none;
@@ -80,7 +76,7 @@
     font-family: Arial, sans-serif;
     background: #c1cfbf;
     height: 100%;
-    overflow: hidden;
+    overflow-y: auto;
   }
   body {
     font-family: Arial, sans-serif;

@@ -21,7 +21,7 @@ function HomePage() {
         </div>
         <div className="card">
           <h2>Family Doctor</h2>
-          <button>Book Now</button>
+          <button onClick={()=>navigate("/book-appointment")}>Book Now</button>
         </div>
       </section>
     </div>
