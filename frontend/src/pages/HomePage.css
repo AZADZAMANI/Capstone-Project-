@@ -1,9 +1,13 @@
-.homepage {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-  }
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  min-height: 100vh; 
+  padding-top: 80px; 
+  box-sizing: border-box;
+}
+
 
 
   .slogan {
