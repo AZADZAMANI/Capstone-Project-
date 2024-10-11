@@ -11,24 +11,28 @@
 
 
   .slogan {
-    margin: 40px 0;
-    font-size: 1.8em;
-    color: #333;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   }
   
 
   .cards {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
     gap: 20px;
-    padding: 20px;
-    margin-top: auto;
-    margin-bottom: 40px;
   }
   
 
   .card {
-    background: #f1f1f1;
+    background: rgba(255, 255, 255, 0.5);
+    /* background: #f1f1f1; */
     padding: 20px;
     border-radius: 10px;
     width: 200px;
