@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios'; // Import axios for HTTP requests
 import './RegisterPage.css';
 import '../common.css';
 
@@ -55,7 +56,27 @@ function RegisterPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormValid) {
-      navigate('/myprofile'); // Navigating directly to the profile page
+      // Prepare the data to send
+      const data = {
+        full_name: formData.fullName,
+        address: formData.address,
+        phone_number: formData.phoneNumber,
+        email: formData.email,
+        password_hash: formData.password,  // Assuming plain text password (consider hashing on backend)
+        doctor: formData.selectedDoctor,
+      };
+
+      // Send data to the backend
+      axios.post('http://localhost:8000/health_app/api/register/', data)
+        .then((response) => {
+          console.log("Patient registered:", response.data);
+          alert("Registration successful!");
+          navigate('/myprofile'); // Navigate to the profile page after successful registration
+        })
+        .catch((error) => {
+          console.error("There was an error registering the patient:", error);
+          alert("Registration failed. Please try again.");
+        });
     }
   };
 
@@ -72,6 +93,7 @@ function RegisterPage() {
               name="fullName"
               value={formData.fullName}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
@@ -81,6 +103,7 @@ function RegisterPage() {
               name="address"
               value={formData.address}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
@@ -90,6 +113,7 @@ function RegisterPage() {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
@@ -99,6 +123,7 @@ function RegisterPage() {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
@@ -108,15 +133,17 @@ function RegisterPage() {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
             Select Doctor:
             <div className="custom-select">
-              <select 
-                name="selectedDoctor" 
-                value={formData.selectedDoctor} 
+              <select
+                name="selectedDoctor"
+                value={formData.selectedDoctor}
                 onChange={handleDoctorSelection}
+                required
               >
                 <option value="">-- Please Select a Doctor --</option>
                 {doctorList.map((doctor) => (

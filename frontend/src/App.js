@@ -1,52 +1,147 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import HomePage from './pages/HomePage';
-import RegisterPage from './pages/RegisterPage';
-import PatientProfile from './pages/PatientProfile';
-import SignInPage from './pages/SignInPage'; 
-import './common.css';
-import Header from './components/Header';
-import BookAppointmentPage from './pages/BookAppointmentPage'; 
+import { useNavigate } from 'react-router-dom';
+import './RegisterPage.css';
+import '../common.css';
 
-function App() {
-  const [patientData, setPatientData] = useState({
-    patient: { name: "John Doe" },
-    upcomingAppointments: [
-      { doctor: "Dr. Smith", date: "2023-05-15", startTime: "10:00 AM", endTime: "11:00 AM" },
-      { doctor: "Dr. Johnson", date: "2023-05-20", startTime: "2:00 PM", endTime: "3:00 PM" },
-    ],
-    appointmentHistory: [
-      { doctor: "Dr. Brown", date: "2023-04-10", time: "9:00 AM" },
-      { doctor: "Dr. Davis", date: "2023-03-22", time: "11:30 AM" },
-    ],
+function RegisterPage() {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    address: '',
+    phoneNumber: '',
+    email: '',
+    password: '',
+    termsAccepted: false,
+    selectedDoctor: '',
   });
 
+  const [doctorList, setDoctorList] = useState([
+    { id: 1, name: 'Dr. John Smith', maxPatients: 10, currentPatients: 5 },
+    { id: 2, name: 'Dr. Sarah Johnson', maxPatients: 8, currentPatients: 8 },
+    { id: 3, name: 'Dr. Emily Brown', maxPatients: 12, currentPatients: 3 },
+  ]);
+
+  const navigate = useNavigate();
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleCheckboxChange = (e) => {
+    setFormData({
+      ...formData,
+      termsAccepted: e.target.checked,
+    });
+  };
+
+  const handleDoctorSelection = (e) => {
+    setFormData({
+      ...formData,
+      selectedDoctor: e.target.value,
+    });
+  };
+
+  const isFormValid =
+    formData.fullName &&
+    formData.address &&
+    formData.phoneNumber &&
+    formData.email &&
+    formData.password &&
+    formData.termsAccepted;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isFormValid) {
+      navigate('/myprofile'); // Navigating directly to the profile page
+    }
+  };
+
   return (
-    <Router basename="/Capstone-Project-">
-      <div className="App">
-        <Header />
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/register" element={<RegisterPage />} />
-            <Route path="/signin" element={<SignInPage />} /> 
-            <Route path="/book-appointment" element={<BookAppointmentPage />} />
-            <Route path="/myprofile" element={
-              patientData ? (
-                <PatientProfile
-                  patient={patientData.patient}
-                  upcomingAppointments={patientData.upcomingAppointments}
-                  appointmentHistory={patientData.appointmentHistory}
-                />
-              ) : (
-                <div>Loading...</div>
-              )
-            } />
-          </Routes>
-        </div>
+    <div className="register-page">
+      <div className="form-container">
+        <h1>New Patient Registration Form</h1>
+        <h2>Welcome to Destination Health</h2>
+        <form className="registration-form" onSubmit={handleSubmit}>
+          <label>
+            Full Name:
+            <input
+              type="text"
+              name="fullName"
+              value={formData.fullName}
+              onChange={handleInputChange}
+            />
+          </label>
+          <label>
+            Address:
+            <input
+              type="text"
+              name="address"
+              value={formData.address}
+              onChange={handleInputChange}
+            />
+          </label>
+          <label>
+            Phone Number:
+            <input
+              type="tel"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleInputChange}
+            />
+          </label>
+          <label>
+            Email:
+            <input
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleInputChange}
+            />
+          </label>
+          <label>
+            Password:
+            <input
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleInputChange}
+            />
+          </label>
+          <label>
+            Select Doctor:
+            <div className="custom-select">
+              <select
+                name="selectedDoctor"
+                value={formData.selectedDoctor}
+                onChange={handleDoctorSelection}
+              >
+                <option value="">-- Please Select a Doctor --</option>
+                {doctorList.map((doctor) => (
+                  <option key={doctor.id} value={doctor.id}>
+                    {doctor.name} (Current Patients: {doctor.currentPatients}/{doctor.maxPatients})
+                  </option>
+                ))}
+              </select>
+            </div>
+          </label>
+          <label className="terms-checkbox">
+            <input
+              type="checkbox"
+              checked={formData.termsAccepted}
+              onChange={handleCheckboxChange}
+            />
+            I accept the terms
+          </label>
+          <button type="submit" disabled={!isFormValid}>
+            Register
+          </button>
+        </form>
       </div>
-    </Router>
+    </div>
   );
 }
 
-export default App;
+export default RegisterPage;
