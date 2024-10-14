@@ -53,8 +53,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'destination_health',
-        'USER': 'admindb',
-        'PASSWORD': 'Fall$2024$capston??',
+        'USER': 'xxx',
+        'PASSWORD': 'xxx',
         'HOST': 'destination-health-db.ct4e6qsqq4et.us-east-2.rds.amazonaws.com',
         'PORT': '5432',
     }
