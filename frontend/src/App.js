@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './RegisterPage.css';
-import '../common.css';
+import './pages/RegisterPage.css' ;
+import './common.css';
+
+
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
