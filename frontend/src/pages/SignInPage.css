@@ -50,6 +50,11 @@
   .sign-in-form button:hover {
     background-color: #0056b3;
   }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
+  }
   
   .register-link {
     margin-top: 15px;
