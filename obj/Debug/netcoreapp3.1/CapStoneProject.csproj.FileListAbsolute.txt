@@ -1,0 +1,176 @@
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.exe
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.deps.json
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.runtimeconfig.json
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.runtimeconfig.dev.json
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.pdb
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Azure.Core.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Azure.Identity.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Server.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.ClientModel.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.IO.FileSystem.AccessControl.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.1\Microsoft.Data.SqlClient.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.1\Microsoft.Data.SqlClient.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.IO.FileSystem.AccessControl.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\labir\source\repos\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.csproj.AssemblyReference.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.AssemblyInfoInputs.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.AssemblyInfo.cs
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.csproj.CoreCompileInputs.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.RazorTargetAssemblyInfo.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\CapStoneProject.StaticWebAssets.Manifest.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\CapStoneProject.StaticWebAssets.Pack.cache
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.CapStoneProject.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.CapStoneProject.props
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.CapStoneProject.props
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.CapStoneProject.props
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStone.1510484A.Up2Date
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.dll
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.pdb
+C:\Users\labir\source\repos\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.genruntimeconfig.cache
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\appsettings.json
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.exe
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.deps.json
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.runtimeconfig.json
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.runtimeconfig.dev.json
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\CapStoneProject.pdb
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Azure.Core.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Azure.Identity.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.SqlServer.Server.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Win32.Registry.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.ClientModel.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Formats.Asn1.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.IO.FileSystem.AccessControl.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Memory.Data.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.AccessControl.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Cryptography.Cng.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Security.Principal.Windows.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\de\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\es\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\fr\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\it\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\ja\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\ko\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\ru\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netstandard2.1\Microsoft.Data.SqlClient.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.1\Microsoft.Data.SqlClient.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\Microsoft.Win32.Registry.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.IO.FileSystem.AccessControl.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Runtime.Caching.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.AccessControl.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+E:\DB backup\CapStoneProject\CapStoneProject\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.csproj.AssemblyReference.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.GeneratedMSBuildEditorConfig.editorconfig
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.AssemblyInfoInputs.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.AssemblyInfo.cs
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.csproj.CoreCompileInputs.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.MvcApplicationPartsAssemblyInfo.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.RazorTargetAssemblyInfo.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\CapStoneProject.StaticWebAssets.Manifest.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\CapStoneProject.StaticWebAssets.Pack.cache
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.CapStoneProject.Microsoft.AspNetCore.StaticWebAssets.props
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.CapStoneProject.props
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.CapStoneProject.props
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.CapStoneProject.props
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStone.1510484A.Up2Date
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.dll
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.pdb
+E:\DB backup\CapStoneProject\CapStoneProject\obj\Debug\netcoreapp3.1\CapStoneProject.genruntimeconfig.cache
