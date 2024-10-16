@@ -1,26 +1,49 @@
-import React, { useState } from 'react';
+// /frontend/src/pages/RegisterPage.js
+
+import React, { useState, useEffect, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './RegisterPage.css';
 import '../common.css';
+import { AuthContext } from '../AuthContext'; // Import AuthContext
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
     fullName: '',
-    address: '',
+    birthdate: '',
+    gender: '',
     phoneNumber: '',
     email: '',
     password: '',
-    termsAccepted: false,
     selectedDoctor: '',
+    termsAccepted: false, // Added to track checkbox
   });
 
-  const [doctorList, setDoctorList] = useState([
-    { id: 1, name: 'Dr. John Smith', maxPatients: 10, currentPatients: 5 },
-    { id: 2, name: 'Dr. Sarah Johnson', maxPatients: 8, currentPatients: 8 },
-    { id: 3, name: 'Dr. Emily Brown', maxPatients: 12, currentPatients: 3 },
-  ]);
+  const [doctorList, setDoctorList] = useState([]);
+  const [loadingDoctors, setLoadingDoctors] = useState(true);
+  const [error, setError] = useState('');
+  const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
   const navigate = useNavigate();
+
+  // Fetch the list of doctors from the backend when the component mounts
+  useEffect(() => {
+    fetch('http://localhost:5001/api/doctors')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch doctors');
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setDoctorList(data);
+        setLoadingDoctors(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setError('Unable to load doctors. Please try again later.');
+        setLoadingDoctors(false);
+      });
+  }, []);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -44,19 +67,62 @@ function RegisterPage() {
     });
   };
 
+  // Validate form fields
   const isFormValid =
     formData.fullName &&
-    formData.address &&
+    formData.birthdate &&
+    formData.gender &&
     formData.phoneNumber &&
     formData.email &&
     formData.password &&
+    formData.selectedDoctor &&
     formData.termsAccepted;
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (isFormValid) {
-      navigate('/myprofile'); // Navigating directly to the profile page
+    setError('');
+
+    if (!isFormValid) {
+      setError('Please fill in all required fields and accept the terms.');
+      return;
     }
+
+    // Prepare the data to be sent to the backend
+    const payload = {
+      fullName: formData.fullName,
+      birthdate: formData.birthdate,
+      gender: formData.gender,
+      phoneNumber: formData.phoneNumber,
+      email: formData.email,
+      password: formData.password,
+      selectedDoctor: formData.selectedDoctor,
+    };
+
+    fetch('http://localhost:5001/api/register', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    })
+      .then(async (response) => {
+        const data = await response.json();
+        if (!response.ok) {
+          throw new Error(data.error || 'Registration failed');
+        }
+        return data;
+      })
+      .then((data) => {
+        setRegistrationSuccess(true);
+        // Redirect to sign-in page after a delay
+        setTimeout(() => {
+          navigate('/signin'); // Changed from '/myprofile' to '/signin'
+        }, 2000);
+      })
+      .catch((err) => {
+        console.error(err);
+        setError(err.message || 'An unexpected error occurred');
+      });
   };
 
   return (
@@ -64,6 +130,12 @@ function RegisterPage() {
       <div className="form-container">
         <h1>New Patient Registration Form</h1>
         <h2>Welcome to Destination Health</h2>
+        {error && <div className="error-message">{error}</div>}
+        {registrationSuccess && (
+          <div className="success-message">
+            Registration successful! Redirecting to sign-in...
+          </div>
+        )}
         <form className="registration-form" onSubmit={handleSubmit}>
           <label>
             Full Name:
@@ -72,16 +144,33 @@ function RegisterPage() {
               name="fullName"
               value={formData.fullName}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
-            Address:
+            Birthdate:
             <input
-              type="text"
-              name="address"
-              value={formData.address}
+              type="date"
+              name="birthdate"
+              value={formData.birthdate}
               onChange={handleInputChange}
+              required
             />
+          </label>
+          <label>
+            Gender:
+            <select
+              name="gender"
+              value={formData.gender}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="">-- Please Select Gender --</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+              <option value="Prefer not to say">Prefer not to say</option>
+            </select>
           </label>
           <label>
             Phone Number:
@@ -90,6 +179,9 @@ function RegisterPage() {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleInputChange}
+              required
+              pattern="[0-9]{10}"
+              placeholder="e.g., 1234567890"
             />
           </label>
           <label>
@@ -99,6 +191,7 @@ function RegisterPage() {
               name="email"
               value={formData.email}
               onChange={handleInputChange}
+              required
             />
           </label>
           <label>
@@ -108,34 +201,54 @@ function RegisterPage() {
               name="password"
               value={formData.password}
               onChange={handleInputChange}
+              required
+              minLength="6"
+              placeholder="Minimum 6 characters"
             />
           </label>
           <label>
             Select Doctor:
             <div className="custom-select">
-              <select 
-                name="selectedDoctor" 
-                value={formData.selectedDoctor} 
-                onChange={handleDoctorSelection}
-              >
-                <option value="">-- Please Select a Doctor --</option>
-                {doctorList.map((doctor) => (
-                  <option key={doctor.id} value={doctor.id}>
-                    {doctor.name} (Current Patients: {doctor.currentPatients}/{doctor.maxPatients})
-                  </option>
-                ))}
-              </select>
+              {loadingDoctors ? (
+                <p>Loading doctors...</p>
+              ) : doctorList.length > 0 ? (
+                <select
+                  name="selectedDoctor"
+                  value={formData.selectedDoctor}
+                  onChange={handleDoctorSelection}
+                  required
+                >
+                  <option value="">-- Please Select a Doctor --</option>
+                  {doctorList.map((doctor) => (
+                    <option
+                      key={doctor.DoctorID}
+                      value={doctor.DoctorID}
+                      disabled={doctor.CurrentPatientNumber >= doctor.MaxPatientNumber}
+                    >
+                      {doctor.FullName} (
+                      {doctor.CurrentPatientNumber}/{doctor.MaxPatientNumber} Patients)
+                      {doctor.CurrentPatientNumber >= doctor.MaxPatientNumber
+                        ? ' - Full'
+                        : ''}
+                    </option>
+                  ))}
+                </select>
+              ) : (
+                <p>No doctors available at the moment.</p>
+              )}
             </div>
           </label>
           <label className="terms-checkbox">
             <input
               type="checkbox"
-              checked={formData.termsAccepted}
+              name="termsAccepted"
+              checked={formData.termsAccepted || false} // Ensure default is false
               onChange={handleCheckboxChange}
+              required
             />
-            I accept the terms
+            I accept the terms and conditions
           </label>
-          <button type="submit" disabled={!isFormValid}>
+          <button type="submit" disabled={!isFormValid || loadingDoctors}>
             Register
           </button>
         </form>

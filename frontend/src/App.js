@@ -1,25 +1,18 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// /Users/star/Capstone/Capstone-Project-/frontend/src/App.js
+
+import React, { useContext } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import RegisterPage from './pages/RegisterPage';
 import PatientProfile from './pages/PatientProfile';
-import SignInPage from './pages/SignInPage'; 
+import SignInPage from './pages/SignInPage';
 import './common.css';
 import Header from './components/Header';
-import BookAppointmentPage from './pages/BookAppointmentPage'; 
+import BookAppointmentPage from './pages/BookAppointmentPage';
+import { AuthContext } from './AuthContext'; // Import AuthContext
 
 function App() {
-  const [patientData, setPatientData] = useState({
-    patient: { name: "John Doe" },
-    upcomingAppointments: [
-      { doctor: "Dr. Smith", date: "2023-05-15", startTime: "10:00 AM", endTime: "11:00 AM" },
-      { doctor: "Dr. Johnson", date: "2023-05-20", startTime: "2:00 PM", endTime: "3:00 PM" },
-    ],
-    appointmentHistory: [
-      { doctor: "Dr. Brown", date: "2023-04-10", time: "9:00 AM" },
-      { doctor: "Dr. Davis", date: "2023-03-22", time: "11:30 AM" },
-    ],
-  });
+  const { auth } = useContext(AuthContext); // Access auth state
 
   return (
     <Router basename="/Capstone-Project-">
@@ -29,19 +22,15 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/register" element={<RegisterPage />} />
-            <Route path="/signin" element={<SignInPage />} /> 
-            <Route path="/book-appointment" element={<BookAppointmentPage />} />
-            <Route path="/myprofile" element={
-              patientData ? (
-                <PatientProfile
-                  patient={patientData.patient}
-                  upcomingAppointments={patientData.upcomingAppointments}
-                  appointmentHistory={patientData.appointmentHistory}
-                />
-              ) : (
-                <div>Loading...</div>
-              )
+            <Route path="/signin" element={!auth.token ? <SignInPage /> : <Navigate to="/myprofile" />} />
+            <Route path="/book-appointment" element={
+              auth.token ? <BookAppointmentPage /> : <Navigate to="/signin" />
             } />
+            <Route path="/myprofile" element={
+              auth.token ? <PatientProfile /> : <Navigate to="/signin" />
+            } />
+            {/* Redirect unknown routes to home */}
+            <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </div>
       </div>

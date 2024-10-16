@@ -1,3 +1,5 @@
+/* /Users/star/Capstone/Capstone-Project-/frontend/src/pages/RegisterPage.css */
+
 .register-page {
   text-align: center;
   display: flex;
@@ -7,7 +9,6 @@
   padding: 20px;
   overflow-y: auto;
 }
-
 
 .form-container {
   background: white;
@@ -45,13 +46,17 @@
 .registration-form input[type="text"],
 .registration-form input[type="tel"],
 .registration-form input[type="email"],
-.registration-form input[type="password"] {
+.registration-form input[type="password"],
+.registration-form input[type="date"],
+.registration-form select[name="gender"],
+.registration-form select[name="selectedDoctor"] {
   padding: 10px;
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 100%;
   box-sizing: border-box;
+  height: 40px; /* Consistent height */
 }
 
 .custom-select select {
@@ -61,8 +66,8 @@
   width: 100%;
   box-sizing: border-box;
   margin-top: 5px;
+  height: 40px; /* Consistent height */
 }
-
 
 .terms-checkbox {
   display: flex;
@@ -88,4 +93,46 @@
 .registration-form button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.custom-select select option:disabled {
+  color: #999;
+}
+
+@media screen and (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .registration-form input[type="text"],
+  .registration-form input[type="tel"],
+  .registration-form input[type="email"],
+  .registration-form input[type="password"],
+  .registration-form input[type="date"],
+  .registration-form select[name="gender"],
+  .registration-form select[name="selectedDoctor"],
+  .custom-select select {
+    height: 35px; /* Adjusted height for smaller screens */
+  }
+
+  .registration-form button {
+    padding: 10px;
+    font-size: 1em;
+  }
 }
