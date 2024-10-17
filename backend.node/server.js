@@ -26,7 +26,8 @@ app.use(cors(corsOptions)); // Enable CORS with specified options
 app.use(bodyParser.json()); // Parse incoming JSON data
 
 // Initialize SQLite database
-const db = new sqlite3.Database(process.env.DB_PATH || './clinic.db', (err) => {
+const dbPath = path.resolve(__dirname, 'clinic.db'); 
+const db = new sqlite3.Database(process.env.DB_PATH || dbPath, (err) => {
   if (err) {
     console.error('Error opening SQLite database:', err.message);
   } else {
