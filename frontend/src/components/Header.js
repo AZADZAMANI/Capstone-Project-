@@ -4,10 +4,12 @@ import React, { useContext, useState, useRef, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import { AuthContext } from '../AuthContext'; // Import AuthContext
+import { FaUserCircle, FaBars, FaTimes } from 'react-icons/fa'; // Importing icons
 
 function Header() {
   const { auth, logout } = useContext(AuthContext); // Access auth state and logout function
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const dropdownRef = useRef(null);
   const navigate = useNavigate();
 
@@ -16,10 +18,18 @@ function Header() {
     setDropdownOpen(!dropdownOpen);
   };
 
+  // Toggle mobile menu
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
   // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
         setDropdownOpen(false);
       }
     };
@@ -33,37 +43,55 @@ function Header() {
   const handleLogout = () => {
     logout();
     navigate('/'); // Redirect to home page after logout
+    setDropdownOpen(false);
+    setMobileMenuOpen(false);
   };
 
   return (
     <header className="header">
       <div className="logo-container">
-        <img src={logo} alt="Destination Health Logo" className="logo" />
-        <Link to="/" className="title-link">
-          <span className="title">Destination Health</span>
+        <Link to="/" className="logo-link">
+          {/* Replace with your logo image if available */}
+          <span className="logo-text">Destination Health</span>
         </Link>
       </div>
 
-      <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="#how-to-book">How to book</Link>
-        <Link to="#about-us">About us</Link>
+      <nav className={`nav ${mobileMenuOpen ? 'active' : ''}`}>
+        <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+        <Link to="#how-to-book" onClick={() => setMobileMenuOpen(false)}>How to Book</Link>
+        <Link to="#about-us" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
         {auth.token ? (
           <div className="dropdown" ref={dropdownRef}>
-            <button className="profile-btn" onClick={toggleDropdown}>
-              Profile &#9662;
+            <button
+              className="profile-btn"
+              onClick={toggleDropdown}
+              aria-haspopup="true"
+              aria-expanded={dropdownOpen}
+            >
+              <FaUserCircle className="profile-icon" /> Profile <span className="arrow">&#9662;</span>
             </button>
             {dropdownOpen && (
-              <div className="dropdown-content">
-                <Link to="/myprofile">View Profile</Link>
+              <div className="dropdown-content" role="menu">
+                <Link to="/myprofile" onClick={() => setDropdownOpen(false)}>View Profile</Link>
                 <button onClick={handleLogout} className="logout-btn">Log Out</button>
               </div>
             )}
           </div>
         ) : (
-          <Link to="/signin" className="sign-in-btn">Sign in</Link>
+          <Link to="/signin" className="sign-in-btn">Sign In</Link>
         )}
       </nav>
+
+      <div
+        className="mobile-menu-icon"
+        onClick={toggleMobileMenu}
+        aria-label="Toggle menu"
+        role="button"
+        tabIndex={0}
+        onKeyPress={(e) => { if (e.key === 'Enter') toggleMobileMenu(); }}
+      >
+        {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+      </div>
     </header>
   );
 }
