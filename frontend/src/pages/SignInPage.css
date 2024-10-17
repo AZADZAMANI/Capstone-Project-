@@ -5,7 +5,6 @@
     min-height: calc(100vh - 80px);
     justify-content: center;
     align-items: center;
-    background-color: #c1cfbf;
   }
   
   .form-container {
@@ -49,6 +48,11 @@
   
   .sign-in-form button:hover {
     background-color: #0056b3;
+  }
+  .error-message {
+    color: red;
+    margin-top: 10px;
+    font-weight: bold;
   }
   
   .register-link {

@@ -6,7 +6,6 @@
     overflow-y: auto;
   }
 
-
   .profile-btn {
     background: none;
     border: none;
@@ -38,29 +37,6 @@
     display: block;
   }
   
-  .slogan {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .homepage-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    margin-top: auto;
-  }
-  
-  .card {
-    background: #f1f1f1;
-    padding: 20px;
-    border-radius: 10px;
-    width: 200px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
   .card button {
     margin-top: 10px;
     background-color: #007BFF;
@@ -77,10 +53,28 @@
     background: #c1cfbf;
     height: 100%;
     overflow-y: auto;
+    background-image: url('/public/images/background.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+  }
+  #root::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); 
+    z-index: 1; 
+    pointer-events: none; 
+  }
+  
+  .App {
+    position: relative; 
+    z-index: 2;
   }
   body {
     font-family: Arial, sans-serif;
     background: #c1cfbf;
   }
-  
-  
